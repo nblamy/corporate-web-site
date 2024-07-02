@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ANIMAL RESCUE</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B008B;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #DDA0DD;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D8BFD8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img/backg3.png') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+/* Gallery Section */
+#gallery{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #BA55D3;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 530px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(15, 15, 15) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(0, 255, 0);
+}
+.box img{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(251, 253, 253);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #8B008B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">DISCOVER US</a>
+    <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="staffs.html">Staffs</a>
+    </div>
+    </li>
+    <li><a href="programs.html">PROGRAMS</a></li>
+    <li><a href="eservices.html">E SERVICES</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+ </ul>
+</nav>
+
+ <section id="gallery">
+    <h1 class="headings">VIDEOS AND PICTURES</h1>
+    <div class="row">
+        <div class="box">
+            <h1 class="headings">ADOPT</h1>
+            <video width="500" controls>
+        <source src="img/adoptvideo.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="box">
+            <h1 class="headings">RESCUE</h1>
+            <video width="500" controls>
+        <source src="img/dogrescue.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="box">
+            <h1 class="headings">OUR SHELTER</h1>
+            <img src="img/ourshelter.jpg" alt="shelter">
+        </div>
+        <div class="box">
+            <h1 class="headings">RESCUE</h1>
+            <img src="img/catrescue.jpg" alt="cat">
+        </div>
+        <div class="box">
+            <h1 class="headings">RESCUE</h1>
+            <img src="img/dogrescue.jpg" alt="dog">
+        </div>
+    </div>
+ </section>
+
+<footer>
+  <p>Copyright © 2024 Animal Rescue Organization</p>
+</footer>
+
+</body>
+</html>

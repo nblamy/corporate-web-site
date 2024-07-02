@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ANIMAL RESCUE</title>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+background-color: #BA55D3;
+background-attachment: fixed;  
+background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B008B;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #DDA0DD;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D8BFD8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img/backg3.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/*----- call to action -----*/
+
+.cta{
+margin: 100px auto;
+width: 80%;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/backg1.jpg);
+background-position: center;
+background-size: cover;
+border-radius: 10px;
+text-align: center;
+padding: 100px 0;
+}
+
+.cta h1{
+color: #fff;
+margin-bottom: 40px;
+padding: 0;
+}
+
+
+
+@media(max-width: 700px){
+.cta h1{
+font-size: 24px;
+} 
+}
+
+.hero-btn{
+display: inline-block;
+text-decoration: none;
+color: #fff;
+border: 1px solid #fff;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+}
+.hero-btn:hover{
+border: 1px solid purple;
+background: purple;
+transition: 1s;
+}
+
+/* Style the footer */
+footer {
+  background-color: #8B008B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">DISCOVER US</a>
+    <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="staffs.html">Staffs</a>
+    </div>
+    </li>
+    <li><a href="programs.html">PROGRAMS</a></li>
+    <li><a href="eservices.html">E SERVICES</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+ </ul>
+</nav>
+
+
+ <!-- --- Call To Action ------->
+
+<section class="cta">
+<h1>Any question?<br>Just click the button below to contact us<br>Thank you</h1>
+<a href="contact3.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<footer>
+  <p>Copyright © 2024 Animal Rescue Organization</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANIMAL RESCUE</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8B008B;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #DDA0DD;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D8BFD8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rebeccapurple;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: plum;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Style the footer */
+footer {
+  background-color: #8B008B;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">DISCOVER US</a>
+    <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="staffs.html">Staffs</a>
+    </div>
+    </li>
+    <li><a href="programs.html">PROGRAMS</a></li>
+    <li><a href="eservices.html">E SERVICES</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+ </ul>
+</nav>
+
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>CONTACT US</h2>
+    <p>Leave us a message here:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img/goodthings.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ffb77dd2-865f-4a65-9e87-ec6d2de5f985">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name">
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="email" placeholder="Your Email">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something" style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Copyright © 2024 Animal Rescue Organization</p>
+</footer>
+
+</body>
+</html>
+
+
+
